@@ -45,6 +45,8 @@
   padding: 20px 0px;
   border-radius: 5px;
   margin: 5px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .login-form__log-in:hover,
