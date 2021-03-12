@@ -1,11 +1,11 @@
 #friends-display-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  text-align: center;
   background-color: #fafafa;
-  padding: 15px;
+  padding: 15px 0px;
   font-size: 16px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 #friends-display-link i {
@@ -18,4 +18,8 @@
 
 .fa-chevron-right {
   padding-left: 10px;
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
 }
