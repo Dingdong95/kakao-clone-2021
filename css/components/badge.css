@@ -1,0 +1,11 @@
+.badge {
+  background-color: tomato;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  display: flex; /*why flex still let span have width &height? because flex also contains block inside of it*/
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
