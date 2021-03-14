@@ -12,6 +12,10 @@
   font-weight: 600;
 }
 
+.screen-header__icon {
+  position: relative;
+}
+
 .screen-header__icon span {
   margin-left: 25px;
 }

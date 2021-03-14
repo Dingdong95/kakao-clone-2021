@@ -34,8 +34,8 @@
   border: none;
   font-size: 18px;
   margin-bottom: 25px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: rgba(0, 0, 0, 0.7);
+  border-bottom: var(--main-border);
+  color: var(--grey);
 }
 
 .login-form__log-in,
