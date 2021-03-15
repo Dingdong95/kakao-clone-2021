@@ -11,9 +11,9 @@
   margin-right: 15%;
 }
 
-.more-screen .icon-row .cog__notification__more {
+.cog__notification__more {
   bottom: 33px;
-  left: 150px;
+  left: 157px;
 }
 
 .user-component__subtitle .fa-exclamation-circle {
