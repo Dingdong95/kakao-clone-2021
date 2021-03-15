@@ -1,3 +1,159 @@
 #chat-screen {
   background-color: #abc1d1;
+  height: 11000vh;
+}
+
+#chat-screen .alt-header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #abc1d1;
+  z-index: 1;
+}
+
+#chat-screen .status-bar {
+  background-color: #abc1d1;
+  z-index: 2;
+}
+
+.main-chat {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  color: white;
+  background-color: #92a4b2;
+  padding: 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+
+.message__author {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.message__bubble {
+  background-color: white;
+  padding: 13px;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__time,
+.message__author {
+  opacity: 0.8;
+  font-size: 13px;
+}
+
+.message-row__own {
+  justify-content: flex-end;
+}
+
+.message-row__own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0;
+  border-top-left-radius: 15px;
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+/* 이렇게 처리하거나 개개인별로 순서를 바꿔줄때 유용할듯 
+.message-row__own .message_bubble {
+  order:1;
+}
+
+.message-row__own .message__time {
+  order:0;
+}
+*/
+
+.message-row__own .message__info {
+  flex-direction: row-reverse;
+}
+
+.typing {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.typing .typing__column:first-child {
+  width: 10%;
+}
+
+.typing .typing__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.typing i {
+  opacity: 0.5;
+}
+
+.typing input {
+  padding: 10px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+}
+
+.typing__column:last-child > i,
+.typing__column:last-child button {
+  position: absolute;
+  right: -18px;
+  top: 4px;
+}
+
+.typing__column:last-child > i {
+  right: 25px;
+  top: 12px;
+}
+
+.typing__column button {
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.typing__column button i {
+  opacity: 1;
+}
+
+.typing__column button:focus,
+.typing__column button:active {
+  outline: none;
 }
